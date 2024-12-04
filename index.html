@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Green Path+</title>
+</head>
+<body>
+    <header class="inicio" id="cmc">
+        
+        
+        <nav class="navegar">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src="imgs/Green_Path+__2_-removebg-preview.png" alt="">
+                </div>
+                
+                <li class="list-item"><a href="#cmc">Home</a></li>
+                <li class="list-item"><a href="#sobre-nos">Sobre Nós</a></li>
+                <li class="list-item"><a href="#cont">Contatos</a></li>
+                <li class="list-item"><a href="parceiros.html">Parceiros</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button" onclick="window.location.href = '#cmc' ">Home</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="window.location.href = '#sobre-nos'">Sobre Nós</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="window.location.href = '#cont'">Contatos</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="window.location.href = 'parceiros.html'">Parceiros</button></li>
+                </ul>
+              </div>
+        </nav>
+
+
+
+        
+    </header>
+    <h1 class="title">Preserve o <strong>PLANETA</strong>, Educação é o <strong> FUTURO</strong>!</h1>
+    <div class="buttonsCase">
+        <button class="saber" id="saiba-mais-btn">Saiba Mais<span class="mais">+</span></button>
+        <button class="doar" id="doe-agora-btn">Doe Agora</button>
+    </div>
+    <div class="banner">
+        <img src="imgs/leafs.jpg" alt="img-banner" class="banner-img">
+    </div>
+
+     <!-- Modal para a Introdução do Site -->
+     <div id="intro-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-intro-modal">&times;</span>
+            <h2>Introdução ao Site</h2>
+            <p>Esta página web da Green Path+ tem como objetivo introduzir a educação ambiental e conscientizar a população sobre sua importancia, consequencias, o que podemos fazer, entre outras coisas, temos diversas parcerias com ONGs que ajudam o meio ambiente, ao se aventurar pela nossa plataforma, sairá com uma outra concepção sobre a natureza e a educação ambiental propriamente dita.</p>
+        </div>
+    </div>
+
+   <!-- Modal para a Lista de ONGs -->
+<div id="doe-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-doe-modal">&times;</span>
+        <h2>Lista de ONGs voltadas ao Meio Ambiente</h2>
+        <hr> <!-- Linha separadora -->
+        
+        <!-- ONG 1 -->
+        <div class="ong-section">
+            <img src="https://d3nehc6yl9qzo4.cloudfront.net/img/original/wwf_logo_large_rgb_72dpi.jpg" alt="WWF" class="ong-logo">
+            <div class="ong-info">
+                <h3>WWF Brasil</h3>
+                <p>O WWF trabalha para conservar a natureza e reduzir as ameaças mais urgentes ao equilíbrio da natureza.</p>
+                <a href="https://www.wwf.org.br/" target="_blank" class="visit-btn">Visitar</a>
+            </div>
+        </div>
+        <hr> <!-- Linha separadora -->
+
+        <!-- ONG 2 -->
+        <div class="ong-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaA5mlnUnLMRh4szyjZ2qdYLKeEHwMlFMbSw&s" alt="Greenpeace" class="ong-logo">
+            <div class="ong-info">
+                <h3>Greenpeace Brasil</h3>
+                <p>O Greenpeace é uma organização global que atua em diversos projetos para proteger o meio ambiente e promover a paz.</p>
+                <a href="https://www.greenpeace.org/brasil/" target="_blank" class="visit-btn">Visitar</a>
+            </div>
+        </div>
+        <hr> <!-- Linha separadora -->
+
+        <!-- ONG 3 -->
+        <div class="ong-section">
+            <img src="https://www.royalcartton.com/images/noticias/es/amazoniaviva.png" alt="Amazônia" class="ong-logo">
+            <div class="ong-info">
+                <h3>Amazônia Viva</h3>
+                <p>A Amazônia Viva apoia projetos de conservação da Amazônia, além de incentivar práticas sustentáveis em áreas de risco ambiental.</p>
+                <a href="https://www.amazoniaviva.org.br/" target="_blank" class="visit-btn">Visitar</a>
+            </div>
+        </div>
+        <hr> <!-- Linha separadora -->
+
+        <!-- ONG 4 -->
+        <div class="ong-section">
+            <img src="https://lira.ipe.org.br/images/foto-18.png" alt="ISA" class="ong-logo">
+            <div class="ong-info">
+                <h3>ISA (Instituto Socioambiental)</h3>
+                <p>O ISA trabalha com comunidades tradicionais e povos indígenas para proteger seus direitos e o meio ambiente.</p>
+                <a href="https://www.socioambiental.org/" target="_blank" class="visit-btn">Visitar</a>
+            </div>
+        </div>
+        <hr> <!-- Linha separadora -->
+
+        <!-- ONG 5 -->
+        <div class="ong-section">
+            <img src="https://saudeealegria.org.br/wp-content/uploads/2020/08/avatar_1200x12004.jpg" alt="Saúde na Amazônia" class="ong-logo">
+            <div class="ong-info">
+                <h3>Projeto Saúde & Alegria</h3>
+                <p>Este projeto busca promover a saúde e a sustentabilidade em comunidades da Amazônia, integrando ações ambientais e de saúde pública.</p>
+                <a href="https://saudeealegria.org.br" target="_blank" class="visit-btn">Visitar</a>
+            </div>
+        </div>
+        <hr> <!-- Linha separadora -->
+
+        <!-- ONG 6 -->
+        <div class="ong-section">
+            <img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2022/11/logo-_-oeco-_-parenteses.png?fit=600%2C600&ssl=1" alt="Fundação Oeco" class="ong-logo">
+            <div class="ong-info">
+                <h3>Fundação Oeco</h3>
+                <p>A Fundação Oeco tem como missão a conservação de ecossistemas ameaçados, focando na preservação da biodiversidade.</p>
+                <a href="https://www.oeco.org.br/" target="_blank" class="visit-btn">Visitar</a>
+            </div>
+        </div>
+        <hr> <!-- Linha separadora -->
+    </div>
+</div>
+
+    <main>
+        <div data-aos="fade-down">
+            <div class="titulo">
+                <h1>O Que É Educação Ambiental?</h1>
+                <div class="bloco1">
+                    <p id="firstP">Educação ambiental é a busca por ensinar e aprender a prática de ações sustentáveis,<br> por meio de projetos e participação da população.</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-left">
+            <div class="bloco-conteudo1">
+                <div class="imagem-bloco1">
+                    <div class="imagem-passaro-container">
+                        <img src="imgs/passarinho-no-galho.png" alt="passaro no galho" class="imagem-passaro">
+                    </div>
+                </div>
+                <div class="card-bloco1">
+                    <div class="card-bloco1-content">
+                        <div class="card-texto">
+                            <h2>Para Que Serve a Educação Ambiental?</h2>
+                            <div class="separator"></div>
+                            <p>Seu objetivo é ajudar a amenizar os danos ao meio ambiente e restáura-lo. Além de conscientizar as pessoas sobre o quão importante a natureza é para o planeta, a fim de que as poluições diminuam e consequentemente a Terra volte a ficar segura.</p>
+                        </div>
+                        <div class="imagem-card1">
+                            <div class="imagem-grupo-container">
+                                <img src="imgs/group.png" alt="grupo" class="imagem-grupo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div data-aos="fade-right">
+            <div class="bloco-conteudo2" id="sobre-nos">
+                <div class="card-bloco2">
+                    <div class="card-bloco2-content">
+                        <div class="card-texto2">
+                            <h2>Quem Somos Nós?</h2>
+                            <div class="separator"></div>
+                            <p>Somos uma empresa que visa a ecologia e a sustentabilidade para o nosso mundo, buscamos ações e campanhas de conscientização para a população sobre os mais diversos temas voltados ao meio ambiente. Temos parcerias com diversas ONGs, e já promovemos muitas campanhas que deram muito certo. Este site foi feito para aumentar ainda mais a visibilidade das nossas campanhas e ações para que possamos atingir um público ainda maior de pessoas.</p>
+                        </div>
+                        <div class="imagem-card2">
+                            <div class="imagem-grupo2-container">
+                                <img src="imgs/about.png" alt="grupo" class="imagem-about">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagem-bloco2">
+                    <div class="imagem-tres-passaros-container">
+                        <img src="imgs/tres-passaros-no-galho.png" alt="passaros no galho" class="imagem-tres-passaros">
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+           
+        
+        
+        
+
+       
+
+        
+
+        <div class="container">
+            <div data-aos="flip-left">
+                <div class="card">
+                    <h2>O Que Podemos Fazer</h2>
+                    <div class="separator"></div>
+                    <img src="imgs/successful-happy-business-team.jpg" alt="População" class="icon populacao">
+                    <p>Pequenas ações que fazem a diferença.</p>
+                    <div class="separator"></div>
+                    <a href="sendoFeito.html" class="button">Saiba Mais</a>
+                </div>
+            </div>
+            
+            <div data-aos="flip-left">
+                <div class="card">
+                    <h2>Como Nos Afeta</h2>
+                    <div class="separator"></div>
+                    <img src="imgs/pexels-pixabay-41002.jpg" alt="Fauna" class="icon faunaimg">
+                    <p>Impactos diretos na vida animal, na flora e em nossas vidas.</p>
+                    <div class="separator"></div>
+                    <a href="como-nos-afeta.html" class="button">Saiba Mais</a>
+                </div>
+            </div>
+           
+            <div data-aos="flip-right">
+                <div class="card">
+                    <h2>Qual a Importância</h2>
+                    <div class="separator"></div>
+                    <img src="imgs/pexels-pixabay-87651.jpg" alt="Importância" class="icon world">
+                    <p>A relevância da conservação e ação conjunta.</p>
+                    <div class="separator"></div>
+                    <a href="importancia.html" class="button">Saiba Mais</a>
+                </div>
+            </div>
+        </div> 
+
+
+        <section class="parallax">
+            <div class="parallax-content">
+                <h1 class="h11">Preserve</h1>
+                <h1 class="h12">Cuide</h1>
+                <h1 class="h13">Ajude</h1>
+                <h1 class="h14">Proteja</h1>
+                <h2 class="h15">Sem a NATUREZA não somos nada</h2>
+            </div>
+        </section>
+
+        <div data-aos="fade-up">
+            <section class="title-problems">
+                <h1>PROBLEMAS ENFRENTADOS PELO MEIO AMBIENTE</h1>
+            </section>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imgs/queimadas.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Queimadas na Amazônia e outros biomas</h5>
+                      <p>Em 2024, a temporada de queimadas foi intensificada pelo fenômeno El Niño e pela falta de fiscalização, afetando gravemente a Amazônia, o Cerrado e a Mata Atlântica. Com o maior número de queimadas em quase duas décadas, especialistas alertam para a urgência de políticas preventivas e controle rigoroso dos incêndios criminosos para proteger a biodiversidade e reduzir os impactos ambientais a longo prazo</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/seca.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Calor extremo e secas no Brasil</h5>
+                      <p>As recentes ondas de calor extremo no Brasil e no mundo têm levado a secas prolongadas e baixa disponibilidade de água. Esse aquecimento anômalo, resultado das mudanças climáticas, afeta diretamente a agricultura e coloca em risco a fauna e a flora locais. Especialistas defendem que é essencial criar medidas de adaptação para enfrentar esses eventos cada vez mais intensos​
+                    </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/enchentes.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Desastres naturais em 2024</h5>
+                      <p>Inundações, deslizamentos de terra e outras catástrofes naturais estão em alta devido ao clima instável em várias regiões do mundo. Com chuvas intensas e períodos de seca severa, esses desastres impactam milhões e revelam a necessidade de políticas de mitigação e resiliência para proteger as populações em áreas vulneráveis</p>
+                    </div>
+                  </div>
+            
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+             
+        
+          <div class="contact-container" id="cont">
+            <div class="left-col">
+              <img class="logo2" src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png"/>
+            </div>
+            <div class="right-col">
+              <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+            </label>
+            <div class="description">Dark Mode</div>
+          </div>
+              
+              <h1 class="contact-title">Contate-nos</h1>
+             
+              <form id="contact-form" method="post">
+                <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" placeholder="Seu Nome Completo" required>
+                <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                <label for="message">Mensagem</label>
+            <textarea rows="6" placeholder="Sua Mensagem" id="message" name="message" required></textarea>
+                <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit" class="submit">Enviar</button><!--</a>-->
+            
+          </form>
+          <div id="error"></div>
+          <div id="success-msg"></div>
+            </div>
+          </div>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Green Path+</h4>
+                    <ul>
+                        <li><a href="#sobre-nos" class="link-footer">Sobre Nós</a></li>
+                        <li><a href="parceiros.html" class="link-footer">Nossos Serviços</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Precisa de Ajuda?</h4>
+                    <ul>
+                        <li id="faq"><a href="#" class="link-footer">FAQ</a></li>
+                        <li id="return"><a href="#" class="link-footer">Retornos</a></li>
+                        <li id="comoDoar"><a href="#" class="link-footer">Como doar?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links de Campanha</h4>
+                    <ul>
+                        <li><a href="parceiros.html" class="link-footer">Outras Empresas</a></li>
+                        <li id="otherOng"><a href="#" class="link-footer">ONGS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" class="link-footer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="link-footer"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="link-footer"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

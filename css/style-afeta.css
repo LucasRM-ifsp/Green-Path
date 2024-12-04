@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --montanha1: #3B8B2B; /* Verde montanha */
+    --montanha2: #4A9D43; /* Verde vibrante */
+    --montanha3: #2D5A1F; /* Verde mais escuro e profundo */
+    --montanha4: #66D44B; /* Verde neon para destaque */
+    --montanha5: #278C37; /* Verde escuro mais saturado */
+    --primary-color: #2D5A1F; /* Verde profundo */
+    --secondary-color: #818386;
+    --bg-color: #FCFDFD;
+    --button-color: #3B3636;
+    --h1-color: #3F444C;
+
+    --verde: #0f3b01; /*Verde mais escuro*/
+}
+
+/* ##0f3b01 */
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>; */
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 1280px;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background-color: #0f3b01 !important;
+}
+
+/* HEADER */
+
+
+
+
+/* Navbar */
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.logo {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    margin-left: 20px; 
+}
+
+.logo img {
+    color: white;
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.navegar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7); /* Escuro para contrastar mais com o verde */
+    height: 120px; 
+    padding-right: 75px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    width: 100%; 
+    padding: 10px 20px; 
+    list-style-type: none;
+    gap: 30px; 
+}
+
+.nav-list .list-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s; 
+}
+
+.nav-list .list-item a:hover {
+    color: #66D44B; /* Verde neon para hover */
+}
+
+.slogan {
+    z-index: 1000;
+    position: absolute;
+    left: 100px; 
+    color: white;
+    font-size: 1.3em;
+}
+
+.banner {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 460px;
+    margin: 0;
+    /* margin-bottom: 50px; */
+    background-color: transparent !important;
+    background-image: url(../imgs/laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    background-position-y: -230px;   
+    animation: mover 20s ease-in-out infinite alternate;
+}
+
+/* linear-gradient( 0deg, #2D5A1F, transparent, transparent, transparent) */
+
+@keyframes mover {
+    0% {
+        background-position-x: 0%;
+    }
+    
+    /* 50% {
+        background-position-x: 50%;
+    } */
+    
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.sombra {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* \/\/\/\/\\/\/\/\\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/
+    CONTEUDO
+/* \/\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\//\/\/\/\/\/\\/\/\/\/\/\/\/\/\/\\//\/\/\\/\/\/\/\/\/\/\/
+
+/* --------------------------- INTRODUCAO --------------------------- */
+
+.div-introducao {
+    color: white;
+    padding: 15px 0;
+    margin: 15px 0;
+}
+
+.int-conteudo p{
+    background-color: #0f3b01;
+    box-shadow: 0 0 12px #3B8B2B;
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.int-conteudo p:hover{
+    transform: translateX(12px);
+}
+
+.int-bg {
+    background-color: #2D5A1F !important;
+    /* border-radius: 2pc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.int-conteudo {
+    width: 60%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 50px 0px;
+}
+
+.int-img {
+    width: 39%;
+    margin-right: 40px;
+}
+
+.int-ul{
+    padding-left: 30px;
+    background-color: #0f3b01;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #3B8B2B;
+    transition: all .3s ease-in-out;
+}
+
+
+.int-ul:hover{
+    transform: translateX(12px);
+}
+
+/* --------------------------- FIM INTRODUCAO --------------------------- */
+
+/* ----------------------------------- PARALLAX ----------------------------------- */
+
+.parallax {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../imgs/mesmolugar2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ----------------------------------- FIM PARALLAX ----------------------------------- */
+
+/*------------------------------ TEXTO CLIMA -------------------------------------- */
+
+.div-poluicao {
+    display: flex;
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+.texto-img {
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.texto {
+    width: 100%;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #2D5A1F !important;
+    margin: 30px 30px;
+    padding: 30px 40px;
+    border-radius: 2pc;
+    /* border-radius: 7pc; */
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.paragrafo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 30px;
+    width: 50%;
+    background-color: #234618;
+    padding: 40px 40px;
+    border-radius: 12px;
+}
+
+.paragrafo p{
+    background-color: #0f3b01;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #4A9D43;
+    margin-bottom: 20px;
+}
+
+.paragrafo h3 {
+    margin-bottom: -20px;
+}
+.terra {
+    margin-bottom: -26px;
+}
+
+.img-clima {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-clima img{
+    width: 70%;
+}
+
+/* .img-poluicao {
+    /* width: 50%; */
+    /* height: 50%; */
+    /* border-radius: 8px; */
+/* } */
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #3f76a6 !important;
+    height: 40px;
+    /* display: flex; */
+    align-items: center;
+    color: rgb(220, 253, 242);
+}
+
+.Arroba {
+    color:  #55A6D9;
+}
+
+.float {
+    float: left;
+}
+
+/*------------------------------ FIM TEXTO CLIMA -------------------------------------- */
+
+/*-------------------------- BIO / SAUDE ---------------------------------- */
+.bio-saude {
+    width: 100%;
+    display: flex;
+    float: left;
+    padding: 30px;
+    gap: 30px;
+}
+
+/* --- BIO --- */
+.bio{
+    width: 50%;
+    margin: 0px;
+}
+.bio-bg{
+background-image: url(../imgs/fumaca4.jpg);
+background-size: cover;
+border-radius: 2pc;
+}
+.bio-conteudo {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    margin: 0;
+    padding-bottom: 117px;
+}
+
+.bio-ul{
+    padding-bottom: 5px;
+}
+/* --- BIO --- */
+
+/* --- SAUDE --- */
+.saude{
+    width: 50%;
+}
+.saude-bg{
+background-image: url(../imgs/fumaca4.jpg);
+background-size: cover;
+/* background-position-y: bottom; */
+border-radius: 2pc;
+}
+.saude-conteudo{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    margin: 0; 
+}
+/* --- FIM SAUDE --- */
+
+/*-------------------------- FIM BIO / SAUDE ---------------------------------- */
+
+
+/* ----------------- AMEAÇAS AOS ECOSSISTEMAS MARINHOS ------------------ */
+.mar {
+    padding: 30px;
+}
+.mar-bg {
+    width: 100%;
+    /* padding: 30px; */
+    background-color: #2D5A1F !important;
+    border-radius: 2pc;
+}
+
+.mar-texto-img{
+    width: 100%;
+    display: flex;
+    float: left;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-mar {
+    width: 50%;
+    display: flex;
+    position: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.img-mar img {
+    width: 100%;
+    position: cover;
+    border-radius: 2pc;
+}
+
+.mar-texto {
+    width: 50%;
+    text-align: justify;
+    background-color: #234618;
+    padding: 40px 40px;
+    border-radius: 12px;
+}
+
+.mar-texto p{
+    background-color: #0f3b01;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #4A9D43;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.mar-conteudo {
+    margin: 0;
+}
+/* ----------------- FIM AMEAÇAS AOS ECOSSISTEMAS MARINHOS ------------------ */
+
+
+/* ------- MONEY - SOCIAL ------- */
+.money-social {
+    width: 100%;
+    display: flex;
+    float: left;
+    padding: 30px;
+    gap: 30px;
+    margin: 0;
+}
+/* --- MONEY --- */
+.money {
+    width: 50%;
+    margin: 0px;
+}
+.money-bg{
+background-image: url(../imgs/money4.jpg);
+background-size: cover;
+border-radius: 2pc;
+}
+.money-conteudo {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    margin: 0;
+    /* padding-bottom: 117px; */
+}
+
+.money-ul{
+    padding-bottom: 5px;
+}
+/* --- BIO --- */
+
+/* --- SAUDE --- */
+.social{
+    width: 50%;
+}
+.social-bg{
+background-image: url(../imgs/social2.jpg);
+background-size: cover;
+/* background-position-y: bottom; */
+border-radius: 2pc;
+}
+.social-conteudo{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    margin: 0; 
+    padding-bottom: 38px;
+}
+/* --- FIM MONEY --- */
+
+/* --- SOCIAL --- */
+/* --- FIM SOCIAL --- */
+/* ------- FIM MONEY - SOCIAL ------- */
+
+.container2 {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adiciona espaçamento entre as colunas */
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Remove o padding padrão */
+}
+
+.footer {
+    background-color: #0a120a !important; /* Cor escura de fundo */
+    padding: 70px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-col {
+    flex: 1; /* Faz com que as colunas se ajustem automaticamente */
+    min-width: 200px; /* Define uma largura mínima para as colunas */
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #81c784; /* Cor verde clara para o título */
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #66bb6a !important; /* Cor rosa para a linha */
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li .link-footer {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #dcf3db; /* Cor cinza claro para os links */
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li .link-footer:hover {
+    color: #ffffff; /* Cor branca ao passar o mouse */
+    padding-left: 8px;
+}
+
+.footer-col .social-links .link-footer {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #278C37 !important; /* Fundo transparente com leve branco */
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff; /* Cor branca para os ícones */
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links .link-footer:hover {
+    background-color: #1b5f26 !important; /* Fundo branco ao passar o mouse */
+}

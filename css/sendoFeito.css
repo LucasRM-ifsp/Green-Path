@@ -1,0 +1,444 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+    background-color:  #0a1a08 !important;
+    width: 99vw !important;
+    overflow-x: hidden;
+}
+
+/* header */
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.logo {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    margin-left: 20px; 
+}
+
+.logo img {
+    color: white;
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.navegar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7); /* Escuro para contrastar mais com o verde */
+    height: 120px; 
+    padding-right: 75px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    width: 100%; 
+    padding: 10px 20px; 
+    list-style-type: none;
+    gap: 30px; 
+}
+
+.nav-list .list-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s; 
+}
+
+.nav-list .list-item a:hover {
+    color: #66D44B; /* Verde neon para hover */
+}
+
+.slogan {
+    z-index: 1000;
+    position: absolute;
+    left: 100px; 
+    color: white;
+    font-size: 1.3em;
+}
+
+
+
+/* imagens */
+
+#imgBanner{
+    display: flex;
+    width: 100%;
+}
+
+#imgBanner img{
+    width: 100%;
+    height: 800px;
+}
+
+#img1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* textos */
+#tituBox{
+    display: flex;
+    justify-content: center;
+    margin-top: -790px;
+    width: auto;
+    height: fit-content;
+    opacity: 0.8;
+    height: 800px;
+    backdrop-filter: blur(4px);
+}
+
+.tituPag1{
+    background-color: rgba(204, 221, 186, 0.103);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 80px;
+    opacity: 1;
+    text-align: center;
+    width: 100%;
+  
+}
+
+.titu2Pag1{
+    color: rgb(57, 104, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+#p1{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.pPag1{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    margin-top: 10px;
+}
+
+.subtitulo{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 300px;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+#lista1{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.lista2 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* grid */
+.imgEx{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.elementosPag1 img {
+    width: 200px;
+    height: 200px;
+}
+
+.elementosPag1 {
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    border: solid rgba(74, 128, 63, 0.513) 5px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    height:710px;
+}
+
+.exemplos{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.linha{
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    flex-direction: row;
+    margin-top: -280px;
+}
+
+/* ainda no container das folhas */
+.info{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 700px;
+    border: solid rgba(74, 128, 63, 0.513) 5px;
+    border-radius: 30px;
+    height: 320px;
+    flex-direction: column;
+    font-size: 22px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+#p1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+#containerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -180px;
+    text-align: center;
+}
+
+/* quadrado */
+#animacaoQuadrados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#quadrado3{
+    background-color: rgb(59, 83, 48);
+    width: 20px;
+    height: 20px;
+    animation: girar 2s linear 0s infinite forwards running;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#quadrado2{
+    background-color: rgb(126, 156, 92);
+    width: 15px;
+    height: 15px;
+    transition: 500ms all 100ms linear;
+    animation: girar 2s linear 0s infinite forwards running;
+}
+
+#quadrado{
+    background-color: rgb(163, 241, 160);
+    width: 10px;
+    height: 10px;
+    transition: 500ms all 100ms linear;
+    animation: girar 2s linear 0s infinite forwards running;
+}
+
+/* pre footer */
+#info2{
+    background-color: white;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 70px;
+}
+
+.elementosPag1{
+    font-size: 22px;
+}
+
+#info2-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+}
+
+.carousel {
+    width: 600px;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.carousel img {
+    border-radius: 10px;
+    border: solid rgba(46, 80, 39, 0.856) 5px;
+}
+
+.carousel p, .carousel h2 {
+    color: #060705; /* Verde mais claro para texto */
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(241, 237, 237, 0.205); /* Escuro e mais suave */
+    width: auto;
+}
+
+#conclusao{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    gap: 30px;
+}
+
+/* footer */
+.container2 {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adiciona espaçamento entre as colunas */
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Remove o padding padrão */
+}
+
+.footer {
+    background-color: #0a120a; /* Cor escura de fundo */
+    padding: 70px 0;
+    width: 102%;
+}
+
+.footer-col {
+    flex: 1; /* Faz com que as colunas se ajustem automaticamente */
+    min-width: 200px; /* Define uma largura mínima para as colunas */
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #81c784; /* Cor verde clara para o título */
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #66bb6a; /* Cor rosa para a linha */
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li .link-footer {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #dcf3db; /* Cor cinza claro para os links */
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li .link-footer:hover {
+    color: #ffffff; /* Cor branca ao passar o mouse */
+    padding-left: 8px;
+}
+
+.footer-col .social-links .link-footer {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #278C37; /* Fundo transparente com leve branco */
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff; /* Cor branca para os ícones */
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links .link-footer:hover {
+    background-color: #1b5f26; /* Fundo branco ao passar o mouse */
+}
+
+
+@media (max-width: 480px) {
+   
+
+    .dropdown{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 100%;
+        margin-right: 20px;
+    }
+    
+}
